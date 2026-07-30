@@ -174,8 +174,20 @@
   .absolute {
     position: absolute;
   }
+  .fixed {
+    position: fixed;
+  }
   .relative {
     position: relative;
+  }
+  .sticky {
+    position: sticky;
+  }
+  .top-0 {
+    top: 0px;
+  }
+  .z-50 {
+    z-index: 50;
   }
   .container {
     width: 100%;
@@ -239,14 +251,32 @@
   .table {
     display: table;
   }
+  .h-8000 {
+    height: calc(var(--spacing) * 8000);
+  }
+  .h-\[8000px\] {
+    height: 8000px;
+  }
   .h-screen {
     height: 100vh;
   }
   .w-99 {
     width: calc(var(--spacing) * 99);
   }
+  .w-100 {
+    width: calc(var(--spacing) * 100);
+  }
+  .w-\[100\%\] {
+    width: 100%;
+  }
+  .w-\[100\] {
+    width: 100;
+  }
   .w-fit {
     width: fit-content;
+  }
+  .w-full {
+    width: 100%;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -294,6 +324,9 @@
   }
   .bg-\[\#FDD3D3\] {
     background-color: #FDD3D3;
+  }
+  .bg-background-main {
+    background-color: var(--color-background-main);
   }
   .bg-head {
     background-color: var(--color-head);
