@@ -65,5 +65,5 @@
 }
 
 @utility nav-link{
-    @apply text-[16px]  hover:text-head transition-all duration-500 inline-block hover:scale-110;
+    @apply text-[16px]  hover:text-head transition-all duration-500  hover:scale-110 hidden lg:inline-block;
 }
