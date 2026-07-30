@@ -457,8 +457,20 @@
     }
   }
   @media (width >= 40rem) {
+    .sm\:w-\[\%\] {
+      width: %;
+    }
+    .sm\:w-\[30\%\] {
+      width: 30%;
+    }
+    .sm\:w-\[35\%\] {
+      width: 35%;
+    }
     .sm\:w-\[47\%\] {
       width: 47%;
+    }
+    .sm\:w-\[50\%\] {
+      width: 50%;
     }
     .sm\:px-5 {
       padding-inline: calc(var(--spacing) * 5);
