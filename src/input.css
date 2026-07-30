@@ -19,6 +19,45 @@
         background-color: var(--color-background-main);
         font-family: var(--font-harmattan);
     }
+    h1{
+        font-size: 3rem;
+        line-height: 3.75rem;
+        letter-spacing: 0.06rem;
+        font-weight: 700px;
+    }
+    h2{ /*العناوين مثل الاكثر مبيعا*/ /*اسم المنتج في صفحة المنتج*/
+        font-size: 2rem;
+        line-height: 3.75rem;
+        letter-spacing: 0.06rem;
+        font-weight: 600px;
+    } 
+    h3{
+        font-size: 1.7rem;
+        line-height: 2.1rem;
+        letter-spacing: 0rem;
+        font-weight: 500px;
+    }    
+    h4{ /*العناوين في االفوتير*/
+        font-size: 1.5rem;
+        line-height: 2.1rem;
+        letter-spacing: 0rem;
+        font-weight: 400px;
+
+    }    
+    h5{
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        letter-spacing: 0rem;
+        font-weight: 300px;
+
+    }    
+    h6{/*   اسم المنتج في السلة ملخص الطلب*/
+        font-size: 1rem;
+        line-height: 1rem;
+        letter-spacing: 0rem;
+        font-weight: 200px;
+
+    }    
 }
 
 @utility row{ /*اضافة كلاس جديد للتيلوند*/
@@ -26,5 +65,5 @@
 }
 
 @utility nav-link{
-    @apply text-[16px]  hover:text-head transition-all duration-500 inline-block hover:scale-150
+    @apply text-[16px]  hover:text-head transition-all duration-500 inline-block hover:scale-110;
 }
