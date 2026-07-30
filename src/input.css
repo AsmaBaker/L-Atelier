@@ -12,6 +12,11 @@
     --color-text2:#6E595A;
     --font-harmattan:"Harmattan";/*بديل FreeSerif*/
     --font-lora: "Lora"; /*Liberation Serif بديل*/
+
+    --breakpoint-xs:400px; /*400-650*/
+    
+
+
 }
 
 @layer base { /*تعديل على التيلوند*/
