@@ -1,22 +1,22 @@
 @import "tailwindcss";
 
-.container{
-    width: 90%;
-}
+    .container{
+        width: 90%;
+    }
 
 @theme{ /*تعريف متغيرات*/
+
+  /*الالوان*/
     --color-background-main:#FDF1F1;
     --color-background:#F7EBEB;
     --color-head:#675975;
     --color-text:#4A454C;
     --color-text2:#6E595A;
+  /*الخطوط*/
     --font-harmattan:"Harmattan";/*بديل FreeSerif*/
     --font-lora: "Lora"; /*Liberation Serif بديل*/
-
+  /*حجم شاشة جديد*/
     --breakpoint-xs:400px; /*400-650*/
-    
-
-
 }
 
 @layer base { /*تعديل على التيلوند*/
@@ -28,41 +28,44 @@
         font-size: 3rem;
         line-height: 3.75rem;
         letter-spacing: 0.06rem;
-        font-weight: 700px;
+        font-weight: 900;
     }
     h2{ /*العناوين مثل الاكثر مبيعا*/ /*اسم المنتج في صفحة المنتج*/
         font-size: 2rem;
         line-height: 3.75rem;
         letter-spacing: 0.06rem;
-        font-weight: 600px;
+        font-weight: 800;
     } 
     h3{
         font-size: 1.7rem;
         line-height: 2.1rem;
         letter-spacing: 0rem;
-        font-weight: 500px;
+        font-weight: 700;
     }    
     h4{ /*العناوين في االفوتير*/
         font-size: 1.5rem;
         line-height: 2.1rem;
         letter-spacing: 0rem;
-        font-weight: 400px;
+        font-weight: 600;
 
     }    
     h5{
         font-size: 1.2rem;
         line-height: 1.5rem;
         letter-spacing: 0rem;
-        font-weight: 300px;
-
+        font-weight: 500;
     }    
     h6{/*   اسم المنتج في السلة ملخص الطلب*/
         font-size: 1rem;
         line-height: 1rem;
         letter-spacing: 0rem;
-        font-weight: 200px;
-
+        font-weight: 400;
     }    
+    .container{
+        width: 90%;
+        margin:auto;
+      /* @apply mx-auto;*/
+    }
 }
 
 @utility row{ /*اضافة كلاس جديد للتيلوند*/
@@ -71,4 +74,8 @@
 
 @utility nav-link{
     @apply text-[16px]  hover:text-head transition-all duration-500  hover:scale-110 hidden lg:inline-block;
+}
+
+@utility button{
+    @apply py-4 px-10 rounded-4xl transition-all duration-500;
 }
