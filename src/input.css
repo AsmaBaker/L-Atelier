@@ -37,34 +37,32 @@
         font-weight: 800;
     } 
     h3{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         line-height: 2.1rem;
         letter-spacing: 0rem;
         font-weight: 700;
     }    
     h4{ /*العناوين في االفوتير*/
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         line-height: 2.1rem;
         letter-spacing: 0rem;
         font-weight: 600;
 
     }    
-    h5{
-        font-size: 1.2rem;
+    h5{/*   اسم المنتج في السلة ملخص الطلب*/
+        font-size: 1rem;
         line-height: 1.5rem;
         letter-spacing: 0rem;
         font-weight: 500;
     }    
-    h6{/*   اسم المنتج في السلة ملخص الطلب*/
-        font-size: 1rem;
+    h6{
+        font-size: .8rem;
         line-height: 1rem;
         letter-spacing: 0rem;
         font-weight: 400;
     }    
     .container{
-        width: 90%;
-        margin:auto;
-      /* @apply mx-auto;*/
+      @apply mx-auto;
     }
 }
 
@@ -78,4 +76,8 @@
 
 @utility button{
     @apply py-4 px-10 rounded-4xl transition-all duration-500;
+}
+@utility section{ /*  لانو لما عملت فليكس كول بتنعكس الجستفاي مع الالين اتمز استخدمت  justify-end*/
+    @apply h-72 bg-no-repeat bg-cover bg-center rounded-[40px] flex flex-col justify-end; 
+
 }
