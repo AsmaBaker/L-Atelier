@@ -224,6 +224,9 @@
       max-width: 96rem;
     }
   }
+  .m-auto {
+    margin: auto;
+  }
   .mx-15 {
     margin-inline: calc(var(--spacing) * 15);
   }
@@ -241,6 +244,12 @@
   }
   .ms-\[16px\] {
     margin-inline-start: 16px;
+  }
+  .ms-auto {
+    margin-inline-start: auto;
+  }
+  .me-auto {
+    margin-inline-end: auto;
   }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
