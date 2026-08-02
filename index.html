@@ -43,8 +43,8 @@
                     <p class="text-text text-[20px] landing-[28.5] sm:w-[35%]">اكتشف مجموعتنا المنسقة من الشموع العطرية والأدوات المكتبية المصممة بعناية لتجعل يومك أكثر إشراقاً وجمالاً.</p>
                  </div>
                  <div class="mt-[31.4px] flex gap-4">
-                    <a href="" class="button bg-head text-white hover:bg-white hover:text-head">تسوق الان</a>
-                    <a href="" class="button bg-white text-head hover:bg-head hover:text-white ">عرض المزيد</a>
+                    <a href="" class="mainbutton ">تسوق الان</a>
+                    <a href="" class="whitebutton ">عرض المزيد</a>
                  </div>
             </div>
          </section>
@@ -79,13 +79,15 @@
     </section>
     <section>
         <div class="MostPopular  py-24">
-          <div class="container row gap-[63.99px]">
-            <div class="most-img w-[50%]">
-                <img class="w-[528px] h-[528px] rounded-4xl" src="./src/img/MostPopular/most.png" alt="">
+          <div class="container row max-lg:flex-col gap-[63.99px]">
+            <div class="most-img  w-full lg:w-[50%]">
+                <div class="flex bg-[url(../src/img/MostPopular/most.png)] aspect-square bg-no-repeat bg-cover max-w-[628px] min-w-[350px] rounded-4xl shadow-xl">
+                   <h4 class=" bg-[#ffffff33] hover:bg-[#ffffff33] whitebutton   hover:text-head   ms-10 mt-10 h-fit">الأكثر طلبا</h4>
+                </div>
             </div>
-            <div class="most-desc w-[50%] flex flex-col gap-8">
-                <h2 class="text-head">الأكثر مبيعاً لدينا</h2>
-                <p class="text-text">المنتجات التي خطفت قلوب عملائنا. قطع فنية تجمع بين العملية والجمال لتكتمل بها زوايا منزلك.</p>
+            <div class="most-desc w-full lg:w-[50%] flex flex-col  md:gap-8 gap-5">
+                <h2 class="text-head ">الأكثر مبيعاً لدينا</h2>
+                <p class="text-text ">المنتجات التي خطفت قلوب عملائنا. قطع فنية تجمع بين العملية والجمال لتكتمل بها زوايا منزلك.</p>
                 <div class="products">
                     <div class="product row mb-6  gap-x-6">
                         <img class="rounded-2xl" src="./src/img/MostPopular/most2.png" alt="">
@@ -93,7 +95,7 @@
                           <h6 class="text-text3">شمعة الورد والمسك</h6>
                           <p class="text-head">95 ر.س</p>
                         </div>
-                        <img src="./src/img/MostPopular/Container.svg" alt="">
+                        <a href=""><img src="./src/img/MostPopular/Container.svg" alt=""></a>
                     </div>
                     <div class="product row gap-x-6">
                         <img class="rounded-2xl" src="./src/img/MostPopular/most3.png" alt="">
@@ -101,11 +103,10 @@
                           <h6 class="text-text3">قلم الريشة الفاخر</h6>
                           <p class="text-head">120 ر.س</p>
                         </div>
-                        <img src="./src/img/MostPopular/Container.svg" alt="">
+                        <a href=""><img src="./src/img/MostPopular/Container.svg" alt=""></a>
                     </div>
                 </div>
-                <a class="button text-white bg-head w-fit hover:text-head hover:bg-white" href="">اكتشف المجموعة كاملة</a>
-
+                <a class="mainbutton " href="">اكتشف المجموعة كاملة</a>
             </div>
           </div>
         </div>

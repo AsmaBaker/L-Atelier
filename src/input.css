@@ -75,8 +75,11 @@
     @apply text-[16px]  hover:text-head transition-all duration-500  hover:scale-110 hidden lg:inline-block;
 }
 
-@utility button{
-    @apply py-4 px-10 rounded-4xl transition-all duration-500;
+@utility mainbutton{
+    @apply py-4 px-10 rounded-4xl transition-all duration-500 text-white bg-head w-fit hover:text-head hover:bg-white;
+}
+@utility whitebutton{
+    @apply py-4 px-10 rounded-4xl transition-all duration-500 bg-white text-head w-fit hover:bg-head hover:text-white ;
 }
 @utility section{ /*  لانو لما عملت فليكس كول بتنعكس الجستفاي مع الالين اتمز استخدمت  justify-end*/
     @apply h-72 bg-no-repeat bg-cover bg-center rounded-[40px] flex flex-col justify-end; 
