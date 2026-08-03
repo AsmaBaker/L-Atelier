@@ -66,6 +66,9 @@
     .container{
       @apply mx-auto;
     }
+    .footer h3{
+        color: red;
+    }
 }
 
 @utility row{ /*اضافة كلاس جديد للتيلوند*/
@@ -89,7 +92,7 @@
 }
 @utility text-underline{
   position: relative;
-  display: inline-block; /* Keeps the line length equal to the text length */
+  display: inline-block; 
   &::after {
  content: "";
   position: absolute;
@@ -99,4 +102,13 @@
   height: 2px;
   background-color: #201A1B; 
   }
+}
+@utility footer-head{
+    @apply mb-[25px] text-head; 
+}
+@utility footer-nav{
+    @apply  min-lg:w-[calc((100%-18rem)/4)] max-md:w-[calc((100%-12rem)/3)] max-sm:w-[100%]
+  
+
+    flex flex-col gap-4; 
 }
