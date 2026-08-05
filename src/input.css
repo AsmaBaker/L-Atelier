@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-    .container{
+  .container{
         width: 90%;
     }
 
@@ -64,12 +64,10 @@
         font-weight: 400;
     }    
     .container{
-      @apply mx-auto;
+      @apply mx-auto ;
     }
-    .footer h3{
-        color: red;
-    }
-}
+}    
+
 
 @utility row{ /*اضافة كلاس جديد للتيلوند*/
     @apply flex items-center;
