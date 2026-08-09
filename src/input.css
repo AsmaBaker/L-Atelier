@@ -112,7 +112,7 @@
     @apply mb-[25px] text-head; 
 }
 @utility footer-nav{
-    @apply  min-lg:w-[calc((100%-18rem)/4)] max-md:w-[calc((100%-12rem)/3)] max-sm:w-[100%] flex flex-col gap-4; 
+    @apply  min-lg:w-[calc((100%-18rem)/4)] max-lg:w-[calc((100%-12rem)/3)]  max-md:w-[calc((100%-12rem)/3)] max-md:bg-amber-500 max-sm:w-full flex flex-col gap-4; 
 }
 @utility new-best {
     @apply absolute top-4 right-4 py-2 px-5 rounded-4xl;
