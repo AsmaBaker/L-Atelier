@@ -10,13 +10,16 @@
     --color-background-main:#FDF1F1;
     --color-background:#F7EBEB;
     --color-background-2:#C5B3D3;
+    --color-background-3:#FDD3D3;
     --color-head:#675975;
     --color-text:#4A454C;    
     --color-text2:#6E595A;
     --color-text3:#201A1B;
+
   /*الخطوط*/
     --font-harmattan:"Harmattan";/*بديل FreeSerif*/
     --font-lora: "Lora"; /*Liberation Serif بديل*/
+
   /*حجم شاشة جديد*/
     --breakpoint-xs:400px; /*400-650*/
 }
@@ -66,6 +69,11 @@
     .container{
       @apply mx-auto ;
     }
+    /*
+    .product h5{
+       color: var(--color-head); 
+       font-size: 25px;
+    }*/
 }    
 
 
@@ -86,7 +94,6 @@
 }
 @utility product{
     @apply  lg:w-[calc((100%-6rem)/4)] md:w-[calc((100%-4rem)/3)] sm:w-[calc((100%-2rem)/2)] w-[100%] text-center; 
-
 }
 @utility text-underline{
   position: relative;
@@ -105,8 +112,23 @@
     @apply mb-[25px] text-head; 
 }
 @utility footer-nav{
-    @apply  min-lg:w-[calc((100%-18rem)/4)] max-md:w-[calc((100%-12rem)/3)] max-sm:w-[100%]
-  
-
-    flex flex-col gap-4; 
+    @apply  min-lg:w-[calc((100%-18rem)/4)] max-md:w-[calc((100%-12rem)/3)] max-sm:w-[100%] flex flex-col gap-4; 
+}
+@utility new-best {
+    @apply absolute top-4 right-4 py-2 px-5 rounded-4xl;
+}
+@utility product-name{
+    @apply text-head text-[24px] ;
+}
+@utility product-price{
+    @apply text-[#765657] text-[18px] font-bold;
+}
+@utility product-desc{
+    @apply text-text text-[18px] mb-[6.2px];
+}
+@utility num{
+    @apply inline-block px-5  py-3 text-center text-head border-1 border-[#CCC4CD] rounded-4xl aspect-square;
+}
+@utility page-num{
+    @apply text-white bg-head;
 }
