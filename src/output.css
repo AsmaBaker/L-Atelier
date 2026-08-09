@@ -8,6 +8,7 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-700: oklch(55.5% 0.163 48.998);
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-2xl: 1.5rem;
@@ -761,8 +762,17 @@
     }
   }
   @media (width < 40rem) {
+    .max-sm\:hidden {
+      display: none;
+    }
     .max-sm\:w-\[100\%\] {
       width: 100%;
+    }
+    .max-sm\:w-full {
+      width: 100%;
+    }
+    .max-sm\:bg-amber-700 {
+      background-color: var(--color-amber-700);
     }
     .max-sm\:text-2xl {
       font-size: var(--text-2xl);
@@ -773,8 +783,17 @@
     .sm\:ms-4 {
       margin-inline-start: calc(var(--spacing) * 4);
     }
+    .min-sm\:w-100 {
+      width: calc(var(--spacing) * 100);
+    }
+    .min-sm\:w-\[100\%\] {
+      width: 100%;
+    }
     .sm\:w-\[35\%\] {
       width: 35%;
+    }
+    .min-sm\:bg-amber-700 {
+      background-color: var(--color-amber-700);
     }
     .sm\:px-5 {
       padding-inline: calc(var(--spacing) * 5);
@@ -790,14 +809,33 @@
     .md\:mx-30 {
       margin-inline: calc(var(--spacing) * 30);
     }
+    .md\:mt-\[31px\] {
+      margin-top: 31px;
+    }
+    .md\:row {
+      display: flex;
+      align-items: center;
+    }
+    .md\:w-1\/2 {
+      width: calc(1 / 2 * 100%);
+    }
+    .md\:gap-4 {
+      gap: calc(var(--spacing) * 4);
+    }
     .md\:gap-8 {
       gap: calc(var(--spacing) * 8);
     }
     .md\:px-17 {
       padding-inline: calc(var(--spacing) * 17);
     }
+    .md\:py-12 {
+      padding-block: calc(var(--spacing) * 12);
+    }
     .md\:py-16 {
       padding-block: calc(var(--spacing) * 16);
+    }
+    .md\:text-\[21px\] {
+      font-size: 21px;
     }
   }
   @media (width >= 64rem) {
@@ -806,6 +844,9 @@
     }
     .lg\:hidden {
       display: none;
+    }
+    .lg\:w-1\/2 {
+      width: calc(1 / 2 * 100%);
     }
     .lg\:w-\[50\%\] {
       width: 50%;
