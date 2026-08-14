@@ -15,6 +15,8 @@
     --color-text:#4A454C;    
     --color-text2:#6E595A;
     --color-text3:#201A1B;
+    --color-border:#CCC4CD;
+
 
   /*الخطوط*/
     --font-harmattan:"Harmattan";/*بديل FreeSerif*/
@@ -131,4 +133,7 @@
 }
 @utility page-num{
     @apply text-white bg-head;
+}
+@utility product-detailes{
+    @apply rounded-2xl w-[calc((100%-48px)/4)];
 }
