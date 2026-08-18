@@ -11,11 +11,14 @@
     --color-background:#F7EBEB;
     --color-background-2:#C5B3D3;
     --color-background-3:#FDD3D3;
+    --color-background-4:#765657;
+    --color-background-5:#f1e5e580;
     --color-head:#675975;
-    --color-text:#4A454C;    
+    --color-text:#4A454C;  
     --color-text2:#6E595A;
     --color-text3:#201A1B;
     --color-border:#CCC4CD;
+    --color-border2: #ccc4cd80;
 
   /*الخطوط*/
     --font-harmattan:"Harmattan";/*بديل FreeSerif*/
@@ -31,25 +34,25 @@
         font-family: var(--font-harmattan);
     }
     h1{
-        font-size: 3rem;
+        font-size: 4rem;
         line-height: 3.75rem;
         letter-spacing: 0.06rem;
         font-weight: 900;
     }
     h2{ /*العناوين مثل الاكثر مبيعا*/ /*اسم المنتج في صفحة المنتج*/
-        font-size: 2rem;
+        font-size: 3rem;
         line-height: 3.75rem;
         letter-spacing: 0.06rem;
         font-weight: 800;
     } 
     h3{
-        font-size: 1.5rem;
+        font-size: 2rem;
         line-height: 2.1rem;
         letter-spacing: 0rem;
         font-weight: 700;
     }    
     h4{ /*العناوين في االفوتير*/
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         line-height: 2.1rem;
         letter-spacing: 0rem;
         font-weight: 600;
