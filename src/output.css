@@ -8,8 +8,11 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-800: oklch(47.3% 0.137 46.201);
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --font-weight-bold: 700;
@@ -242,6 +245,9 @@
       max-width: 96rem;
     }
   }
+  .m-auto {
+    margin: auto;
+  }
   .mx-10 {
     margin-inline: calc(var(--spacing) * 10);
   }
@@ -265,6 +271,9 @@
   }
   .me-4 {
     margin-inline-end: calc(var(--spacing) * 4);
+  }
+  .me-5 {
+    margin-inline-end: calc(var(--spacing) * 5);
   }
   .me-8 {
     margin-inline-end: calc(var(--spacing) * 8);
@@ -311,17 +320,17 @@
     margin-bottom: 25px;
     color: var(--color-head);
   }
+  .mb-1 {
+    margin-bottom: var(--spacing);
+  }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
   .mb-6\.25 {
     margin-bottom: calc(var(--spacing) * 6.25);
-  }
-  .mb-7 {
-    margin-bottom: calc(var(--spacing) * 7);
-  }
-  .mb-8 {
-    margin-bottom: calc(var(--spacing) * 8);
   }
   .mb-\[14\.9px\] {
     margin-bottom: 14.9px;
@@ -478,6 +487,18 @@
       width: calc((100% - 6rem) / 4);
     }
   }
+  .w-1 {
+    width: var(--spacing);
+  }
+  .w-1\/3 {
+    width: calc(1 / 3 * 100%);
+  }
+  .w-2 {
+    width: calc(var(--spacing) * 2);
+  }
+  .w-2\/3 {
+    width: calc(2 / 3 * 100%);
+  }
   .w-\[20\%\] {
     width: 20%;
   }
@@ -511,6 +532,9 @@
   .flex-col {
     flex-direction: column;
   }
+  .flex-nowrap {
+    flex-wrap: nowrap;
+  }
   .flex-wrap {
     flex-wrap: wrap;
   }
@@ -540,6 +564,9 @@
   }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
+  }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
   }
   .gap-12 {
     gap: calc(var(--spacing) * 12);
@@ -582,11 +609,19 @@
     border-block-style: var(--tw-border-style);
     border-block-width: 1px;
   }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
   .border-t-1 {
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
   }
   .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+  .border-b-1 {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
@@ -598,9 +633,6 @@
   }
   .border-y-border {
     border-block-color: var(--color-border);
-  }
-  .border-b-border {
-    border-bottom-color: var(--color-border);
   }
   .border-b-border2 {
     border-bottom-color: var(--color-border2);
@@ -732,6 +764,9 @@
   .ps-10 {
     padding-inline-start: calc(var(--spacing) * 10);
   }
+  .pt-4 {
+    padding-top: calc(var(--spacing) * 4);
+  }
   .pt-8 {
     padding-top: calc(var(--spacing) * 8);
   }
@@ -746,9 +781,6 @@
   }
   .pb-2 {
     padding-bottom: calc(var(--spacing) * 2);
-  }
-  .pb-4 {
-    padding-bottom: calc(var(--spacing) * 4);
   }
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
@@ -769,6 +801,10 @@
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
   .product-price {
     font-size: 18px;
     --tw-font-weight: var(--font-weight-bold);
@@ -785,6 +821,9 @@
   .text-\[16px\] {
     font-size: 16px;
   }
+  .text-\[18px\] {
+    font-size: 18px;
+  }
   .text-\[20px\] {
     font-size: 20px;
   }
@@ -793,6 +832,9 @@
   }
   .text-\[23px\] {
     font-size: 23px;
+  }
+  .text-\[24px\] {
+    font-size: 24px;
   }
   .text-\[32px\] {
     font-size: 32px;
@@ -828,6 +870,10 @@
   .underline {
     text-decoration-line: underline;
   }
+  .shadow-md {
+    --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
   .shadow-xl {
     --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -855,6 +901,14 @@
       font-size: 30px;
     }
   }
+  @media (width < 80rem) {
+    .max-xl\:w-\[100\%\] {
+      width: 100%;
+    }
+    .max-xl\:w-full {
+      width: 100%;
+    }
+  }
   @media (width < 64rem) {
     .max-lg\:me-2 {
       margin-inline-end: calc(var(--spacing) * 2);
@@ -874,14 +928,27 @@
     .max-lg\:mb-4 {
       margin-bottom: calc(var(--spacing) * 4);
     }
+    .max-lg\:row {
+      display: flex;
+      align-items: center;
+    }
     .max-lg\:hidden {
       display: none;
+    }
+    .max-lg\:w-\[100\%\] {
+      width: 100%;
     }
     .max-lg\:w-full {
       width: 100%;
     }
     .max-lg\:flex-col {
       flex-direction: column;
+    }
+    .max-lg\:gap-10 {
+      gap: calc(var(--spacing) * 10);
+    }
+    .max-lg\:bg-amber-800 {
+      background-color: var(--color-amber-800);
     }
     .max-lg\:px-3 {
       padding-inline: calc(var(--spacing) * 3);
@@ -909,16 +976,34 @@
     .max-md\:mt-4 {
       margin-top: calc(var(--spacing) * 4);
     }
+    .max-md\:w-full {
+      width: 100%;
+    }
     .max-md\:flex-wrap {
       flex-wrap: wrap;
     }
+    .max-md\:gap-10 {
+      gap: calc(var(--spacing) * 10);
+    }
   }
   @media (width < 40rem) {
+    .max-sm\:m-auto {
+      margin: auto;
+    }
     .max-sm\:hidden {
       display: none;
     }
     .max-sm\:w-\[100\%\] {
       width: 100%;
+    }
+    .max-sm\:w-full {
+      width: 100%;
+    }
+    .max-sm\:flex-col {
+      flex-direction: column;
+    }
+    .max-sm\:gap-2 {
+      gap: calc(var(--spacing) * 2);
     }
     .max-sm\:text-2xl {
       font-size: var(--text-2xl);
@@ -1008,6 +1093,12 @@
     .lg\:w-\[50\%\] {
       width: 50%;
     }
+    .lg\:w-full {
+      width: 100%;
+    }
+    .lg\:bg-amber-800 {
+      background-color: var(--color-amber-800);
+    }
     .lg\:px-7 {
       padding-inline: calc(var(--spacing) * 7);
     }
@@ -1016,6 +1107,11 @@
     }
     .lg\:py-2 {
       padding-block: calc(var(--spacing) * 2);
+    }
+  }
+  @media (width >= 80rem) {
+    .min-xl\:ms-auto {
+      margin-inline-start: auto;
     }
   }
 }

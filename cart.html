@@ -38,11 +38,11 @@
         <div class="pt-24">
           <div class="container">
             <h2 class="text-head">سلة التسوق الخاصة بك</h2>
-            <div class="row mt-12 gap-12 items-start">
-                <div class="row flex-col gap-2">
-                    <div class="row bg-white gap-22 p-6 rounded-2xl border border-border2">
+            <div class="row mt-12 items-start gap-10 flex-wrap">
+                <div class="row flex-col gap-2 w-2/3 max-xl:w-full">
+                    <div class="row max-sm:flex-col max-sm:w-full max-sm:m-auto bg-white gap-22 max-lg:gap-10 max-sm:gap-2 p-6 rounded-2xl border border-border2">
                         <img src="./src/img/cart/cup.png" class="rounded-3xl" alt="">
-                        <div class="me-16.75">
+                        <div class="">
                           <h5 class="text-text3">كوب "لافندر" الخزفي</h5>
                           <p class="text-[13px] text-text mt-2">صناعة يدوية - 350 مل</p>
                         </div>
@@ -52,26 +52,39 @@
                             <span>-</span>
                         </div>
                         <p class="text-head font-bold">85 ر.س</p>
-                        <img src="./src/img/cart/delete.svg" alt="">
+                        <img src="./src/img/cart/delete.svg" class="" alt="">
                     </div>
- 
+                    <div class="row max-sm:flex-col max-sm:w-full max-sm:m-auto bg-white gap-22 max-lg:gap-10 max-sm:gap-2 p-6 rounded-2xl border border-border2">
+                        <img src="./src/img/cart/cup.png" class="rounded-3xl" alt="">
+                        <div class="">
+                          <h5 class="text-text3">كوب "لافندر" الخزفي</h5>
+                          <p class="text-[13px] text-text mt-2">صناعة يدوية - 350 مل</p>
+                        </div>
+                        <div class="row gap-4 bg-background rounded-3xl text-[20px] py-2 px-4">
+                            <span>+</span>
+                            <span>1</span>
+                            <span>-</span>
+                        </div>
+                        <p class="text-head font-bold">85 ر.س</p>
+                        <img src="./src/img/cart/delete.svg" class="" alt="">
+                    </div>
                 </div>
-                <div class="bg-background-5 ms-auto rounded-2xl p-8 flex flex-col gap-4">
+                <div class="bg-background-5 min-xl:ms-auto m-auto rounded-2xl p-8 flex flex-col gap-4 border border-border2 max-md:w-full">
                     <h5 class="text-2xl text-text3 pb-5 border-b border-b-border2 mb-6">ملخص الطلب</h5>
-                    <div class="row">
-                        <p>المجموع الفرعي</p>
+                    <div class="row text-text">
+                        <p class="">المجموع الفرعي</p>
                         <p class="ms-auto">205 ر.س</p>
                     </div>
-                    <div class="row">
+                    <div class="row text-text">
                         <p>رسوم الشحن</p>
-                        <p class="ms-auto">25 ر.س</p>
+                        <p class="ms-auto font-bold">25 ر.س</p>
                     </div>
-                    <div class="row">
-                        <p>المجموع الكلي</p>
-                        <p class="ms-auto">230 ر.س</p>
+                    <div class="row pt-4 mb-2 text-[24px] font-bold border-t border-border2">
+                        <p class="text-text3">المجموع الكلي</p>
+                        <p class="ms-auto text-head">230 ر.س</p>
                     </div>
-                    <input type="button" value="اتمام الطلب ->" class="py-5 px-24 bg-background-4 rounded-4xl text-white">
-                    <div class="row justify-center">
+                    <input type="button" value="اتمام الطلب ->" class="py-5 px-24 bg-background-4 rounded-4xl text-white shadow-md text-[18px]">
+                    <div class="row justify-center mt-2">
                         <img class="me-1" src="./src/img/cart/safe.svg" alt="">
                         <p> تسوق آمن ومضمون 100% </p>
                     </div>
