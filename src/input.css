@@ -12,13 +12,16 @@
     --color-background-2:#C5B3D3;
     --color-background-3:#FDD3D3;
     --color-background-4:#765657;
-    --color-background-5:#f1e5e580;
+    --color-background-5:#f1e5e580; 
+    --color-background-6:#6759750d;
     --color-head:#675975;
     --color-text:#4A454C;  
     --color-text2:#6E595A;
     --color-text3:#201A1B;
+    --color-text-4:#47454c99;
     --color-border:#CCC4CD;
     --color-border2: #ccc4cd80;
+    
 
   /*الخطوط*/
     --font-harmattan:"Harmattan";/*بديل FreeSerif*/
@@ -39,7 +42,7 @@
         letter-spacing: 0.06rem;
         font-weight: 900;
     }
-    h2{ /*العناوين مثل الاكثر مبيعا*/ /*اسم المنتج في صفحة المنتج*/
+    h2{
         font-size: 3rem;
         line-height: 3.75rem;
         letter-spacing: 0.06rem;
@@ -51,14 +54,14 @@
         letter-spacing: 0rem;
         font-weight: 700;
     }    
-    h4{ /*العناوين في االفوتير*/
+    h4{
         font-size: 1.5rem;
         line-height: 2.1rem;
         letter-spacing: 0rem;
         font-weight: 600;
 
     }    
-    h5{/*   اسم المنتج في السلة ملخص الطلب*/
+    h5{
         font-size: 1rem;
         line-height: 1.5rem;
         letter-spacing: 0rem;
@@ -73,13 +76,7 @@
     .container{
       @apply mx-auto ;
     }
-    /*
-    .product h5{
-       color: var(--color-head); 
-       font-size: 25px;
-    }*/
 }    
-
 
 @utility row{ /*اضافة كلاس جديد للتيلوند*/
     @apply flex items-center;
@@ -97,7 +94,7 @@
     @apply h-72 bg-no-repeat bg-cover bg-center rounded-[40px] flex flex-col justify-end; 
 }
 @utility product{
-    @apply  lg:w-[calc((100%-6rem)/4)] md:w-[calc((100%-4rem)/3)] sm:w-[calc((100%-2rem)/2)] w-[100%] text-center; 
+    @apply  lg:w-[calc((100%-6rem)/4)] md:w-[calc((100%-4rem)/3)] sm:w-[calc((100%-2rem)/2)] w-full text-center; 
 }
 @utility text-underline{
   position: relative;
@@ -112,11 +109,18 @@
   background-color: #201A1B; 
   }
 }
+@utility before-line{
+    ::before { 
+  content: "______________";
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
+}
 @utility footer-head{
     @apply mb-[25px] text-head; 
 }
 @utility footer-nav{
-    @apply  min-lg:w-[calc((100%-18rem)/4)] max-lg:w-[calc((100%-12rem)/3)]  max-md:w-[calc((100%-12rem)/3)] max-sm:w-full flex flex-col gap-4; 
+    @apply  lg:w-[calc((100%-18rem)/4)] max-lg:w-[calc((100%-12rem)/3)]  max-md:w-[calc((100%-12rem)/3)] max-sm:w-full flex flex-col gap-4; 
 }
 @utility new-best {
     @apply absolute top-4 right-4 py-2 px-5 rounded-4xl;
@@ -131,11 +135,17 @@
     @apply text-text text-[18px] mb-[6.2px];
 }
 @utility num{
-    @apply inline-block px-5  py-3 text-center text-head border border-[#CCC4CD] rounded-4xl aspect-square;
+    @apply inline-block px-5  py-3 text-center text-head border border-border rounded-4xl aspect-square;
 }
 @utility page-num{
     @apply text-white bg-head;
 }
 @utility product-detailes{
     @apply rounded-2xl w-[calc((100%-48px)/4)];
+}
+@utility column{
+    @apply flex flex-col;
+}
+@utility form-input{
+    @apply bg-background rounded-4xl py-5 px-6;
 }

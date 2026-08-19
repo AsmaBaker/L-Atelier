@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- google font -->
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Harmattan:wght@400;500;600;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <link href="./src/output.css" rel="stylesheet">
+    <title>تسجيل الدخول</title>
+</head>
+<body dir="rtl">
+  <section class="relative h-screen column justify-center items-center">
+    <img class="absolute top-12  inset-s-35 opacity-25" src="./src/img/sign/Image (4).png" alt="">
+    <img class="absolute top-120 inset-s-50 opacity-25" src="./src/img/sign/Image (5).png" alt="">
+    <img class="absolute top-60  inset-e-35 opacity-25" src="./src/img/sign/Image (6).png" alt="">
+    <img class="absolute bottom-5  inset-e-35 opacity-25" src="./src/img/sign/Image (7).png" alt="">
+
+    <div class="bg-white rounded-4xl p-12 shadow-2xl column gap-2 items-center relative z-30 opacity-80 max-sm:mx-4">
+      <div>
+       <h2 class="text-head">L'Atelier</h2>
+      </div>
+      <div class="flex bg-background p-1 rounded-3xl">
+        <p class="bg-head text-white rounded-3xl py-2 px-12 max-sm:py-2 max-sm:px-4 max-sm:bg-amber-800">تسجيل الدخول</p>
+        <p class="rounded-3xl py-2 px-12 max-sm:py-2 max-sm:px-4">إنشاء حساب</p>
+      </div>
+      <form action="/action_page.php" class="column">
+        <label for="email">البريد الالكتروني :</label>
+        <input class="form-input my-2 w-full" type="email" id="email" name="email" placeholder="example@atelier.com">
+        <div class="row">
+         <label class="flex-1" for="password">كلمة المرور</label>
+         <p class="">نسيت كلمة المرور؟</p>
+        </div>
+        <input class="form-input my-2 w-full" type="password" id="password" name="password">
+        <input class="mainbutton w-full mt-5" type="submit" value="تسجيل الدخول">
+        <a href="" class="inline-block whitebutton mt-2 w-full text-center border-3 border-border"> انشاء حساب جديد</a>
+        <div class="flex item-center w-full justify-center my-5">
+          <div class="flex-1 h-[1px] bg-border2 mt-3"></div>
+          <p class="px-2">أو</p>
+          <div class="flex-1 h-[1px] bg-border2 mt-3"></div>
+        </div>
+        <a href="index.html" class="text-center">المتابعة كضيف <img src="./src/img/cart/Icon.svg" class="inline-block" alt=""></a>
+      </form>
+    </div>
+    <div class="mt-5">
+     <a href="" class="text-taupe-400 me-3">سياسة الخصوصية</a>
+     <a href="" class="text-taupe-400 ">الشروط والأحكام</a>
+    </div>
+
+  </section>
+    
+</body>
+</html>

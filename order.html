@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- google font -->
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Harmattan:wght@400;500;600;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+     <link href="./src/output.css" rel="stylesheet">
+     <title>اتمام الطلب</title>
+</head>
+<body class="" dir="rtl">
+    <header class="fixed top-0 z-50 py-2.5 text-text font-lora max-xs:px-3 bg-background-main w-full border-b-2 border-border2">
+        <div class="container row gap-1">
+            <div class="me-auto">
+                <a href="index.html"><img class="inline-block" src="./src/img/order/icon2.svg" alt=""> العودة للمتجر </a>
+            </div>
+            <div class="text-center flex-1">
+               <a href="index.html" class="text-[48px] text-head max-xs:text-[30px]">L'Atelier</a>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="pt-30 pb-12">
+          <div class="container">
+            <div class="flex mt-12 items-start gap-10 flex-wrap ">
+                <div class="row column gap-8 w-2/3 max-xl:w-full">
+                    <div class="w-full max-sm:w-full max-sm:m-auto bg-white p-8 rounded-2xl border border-border2">
+                        <div class="row gap-4 mb-8">
+                          <img src="./src/img/order/car.svg" alt="car icon">
+                          <h4 class="text-text3">بيانات الشحن</h4>
+                        </div>
+                        <form action="" class="grid grid-cols-2 gap-7 text-text">
+                            <div class="column gap-2">
+                                <label for="fname">الاسم الكامل</label>
+                                <input class="form-input"  type="text" id="name" name="name" placeholder="ادخل اسمك بالكامل">
+                            </div>
+                            <div class="column gap-2">
+                                <label for="phone">رقم الجوال</label>
+                                <input class="form-input" type="text" id="phone" name="phone" placeholder="+966 5X XXX XXXX">
+                            </div>
+                            <div class="col-span-2 column gap-2">
+                                <label for="location">العنوان</label>
+                                <input class="form-input" type="text" id="location" name="location" placeholder="الشارع , الحي , رقم المبنى">
+                            </div>
+                            <div class="column gap-2">
+                                <label for="city">المدينة</label>
+                                <select class="form-input" name="city" id="city" dir="ltr">
+                                  <option value="nablus">nablus</option>
+                                  <option value="nablus">nablus</option>
+                                </select>
+                            </div>
+                            <div class="column gap-2">
+                                <label for="code">الرمز البريدي</label>
+                                <input class="form-input" type="text" id="code" name="code" placeholder="اختياري">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row column w-full items-start max-sm:flex-col max-sm:w-full max-sm:m-auto bg-white gap-8 max-lg:gap-10 max-sm:gap-2 p-6 rounded-2xl border border-border2">
+                        <div class="row gap-4">
+                          <img src="./src/img/order/money.svg" alt="money icon">
+                          <h4 class="text-text3">طرق الدفع</h4>
+                        </div>
+                        <form class="w-full">
+                        <div class="rounded-xl border-2 border-head p-6 bg-background-6">
+                          <div class="row">
+                            <div class="flex-1">
+                             
+                             <label class="text-head font-bold text-[22px]" for="Credit">
+                                <input type="radio" id="Credit" name="pay" value="Credit"  checked>
+                                بطاقة ائتمان (مدى، فيزا)
+                             </label>
+                             
+                            </div>
+                            <div class="">
+                             <img class="" src="./src/img/order/credit.svg" alt="">
+                             </div>
+                          </div>
+                          <p class="tetx-text ms-3">دفع آمن وسريع عبر بوابتنا المشفرة</p>
+                          <div class="grid grid-cols-2 gap-4 mt-4">
+                          <input class="form-input col-span-2" type="text" id="c-num" name="c-num" placeholder="رقم البطاقة">
+                          <input class="form-input" type="date" id="date" name="date" placeholder="mm/yy">
+                          <input class="form-input" type="text" id="cvv" name="cvv" placeholder="cvv">
+                          </div>
+                        </div>
+                        <div class="rounded-xl p-6 bg-background-main mt-4">
+                          <div class="row">
+                            <div class="flex-1">
+                             
+                             <label class="text-head font-bold text-[22px]" for="pay">
+                                <input type="radio" id="arrive" name="pay " value="arrive">
+                                الدفع عند الاستلام
+                             </label>
+                            </div>
+                            <div class="">
+                             <img class="" src="./src/img/order/arrive.svg" alt="">
+                             </div>
+                          </div>
+                          <p class="tetx-text ms-3">ادفع نقداً أو عبر الشبكة عند وصول طلبك</p>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="bg-white text-head rounded-2xl p-8 flex flex-col gap-4 border border-border2 minxl:bg-amber-500 max-xl:w-full">
+                    <h5 class="text-2xl pb-5 border-b-border2">ملخص الطلب</h5>
+                    <div class="column gap-2 border-b border-border2 pb-6">
+                        <div class="row gap-4">
+                            <img src="./src/img/order/mug.png" class="rounded-2xl" alt="cup mug">
+                            <div>
+                              <h5>كوب "فجر" السيراميكي</h4>
+                              <p>الكمية : 1</p>
+                              <p>85 ر.س</p>
+                            </div>
+                        </div>
+                        <div class="row gap-4">
+                            <img src="./src/img/order/mug.png" class="rounded-2xl" alt="cup mug">
+                            <div>
+                              <h5>كوب "فجر" السيراميكي</h4>
+                              <p>الكمية : 1</p>
+                              <p>85 ر.س</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <p class="">المجموع الفرعي</p>
+                        <p class="ms-auto">205 ر.س</p>
+                    </div>
+                    <div class="row">
+                        <p>رسوم الشحن</p>
+                        <p class="ms-auto font-bold">25 ر.س</p>
+                    </div>
+                    <div class="row pt-4 mb-2 text-[24px] font-bold border-border2">
+                        <p class="">المجموع الكلي</p>
+                        <p class="ms-auto">230 ر.س</p>
+                    </div>
+                    <a class="py-5 px-24 bg-head rounded-4xl text-center text-white shadow-md text-[18px]">تأكيد الطلب <img src="./src/img/order/lock.svg" class="inline-block ms-2" alt=""></a>
+                    <div class="row justify-center mt-2">
+                        <img class="me-1" src="./src/img/cart/safe.svg" alt="">
+                        <p>جميع البيانات مشفرة وآمنة تماماً</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <footer> 
+        <div class="text-center py-8 mt-1 bg-background text-text3">
+        <p class="text-2xl mb-5 text-text-4">L'Atelier</p>
+        <p> جميع الحقوق محفوظة. 2024 L'Atelier Stationery. </p>
+        <div class="row justify-center gap-5 mt-5">
+            <a href="">سياسة الخصوصية</a>
+            <a href="">الشروط والأحكام</a>
+            <a href="">تواصل معنا</a>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>
