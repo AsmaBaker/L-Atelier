@@ -76,7 +76,39 @@
     .container{
       @apply mx-auto ;
     }
-}    
+}   
+
+ @layer components {
+    .feedback{
+        @apply bg-background p-8 rounded-3xl mt-12;
+    }
+    .feedback-star{
+        @apply row text-text3 lg:mb-7 max-lg:mb-4;
+    }
+    .feedback-user{
+        @apply row mt-6;
+    }
+     .feedback-user-img{
+        @apply rounded-4xl px-5 py-2 bg-background-3 text-text text-[20px]; 
+    }
+    .feedback-user-name{
+        @apply text-head ms-3 text-[21px]; 
+    }
+ }
+ @layer components {
+  .product{
+    @apply  lg:w-[calc((100%-6rem)/4)] md:w-[calc((100%-4rem)/3)] sm:w-[calc((100%-2rem)/2)] w-full text-center; 
+   }
+  .product-name{
+    @apply text-head text-[24px] ;
+  }
+  .product-price{
+    @apply text-background-4 text-[18px] font-bold;
+  }
+  .product-desc{
+    @apply text-text text-[18px] mb-[6.2px];
+  } 
+ }
 @utility row{ /*اضافة كلاس جديد للتيلوند*/
     @apply flex items-center;
 }
@@ -114,18 +146,6 @@
 @utility sug-price{
     @apply text-head font-bold;
 }
-@utility product{
-    @apply  lg:w-[calc((100%-6rem)/4)] md:w-[calc((100%-4rem)/3)] sm:w-[calc((100%-2rem)/2)] w-full text-center; 
-}
-@utility product-name{
-    @apply text-head text-[24px] ;
-}
-@utility product-price{
-    @apply text-background-4 text-[18px] font-bold;
-}
-@utility product-desc{
-    @apply text-text text-[18px] mb-[6.2px];
-}
 @utility product-detailes{
     @apply rounded-2xl w-[calc((100%-48px)/4)];
 }
@@ -162,3 +182,7 @@
 @utility or-border{
     @apply flex-1 h-px bg-border2 mt-3;
 }
+@utility book-size{
+    @apply lg:py-2 lg:px-7 max-lg:py-1 max-lg:px-3 rounded-4xl;
+}
+
