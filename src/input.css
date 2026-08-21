@@ -14,6 +14,7 @@
     --color-background-4:#765657;
     --color-background-5:#f1e5e580; 
     --color-background-6:#6759750d;
+    --color-background-7:#CEB3B3;
     --color-head:#675975;
     --color-text:#4A454C;  
     --color-text2:#6E595A;
@@ -22,7 +23,6 @@
     --color-border:#CCC4CD;
     --color-border2: #ccc4cd80;
     
-
   /*الخطوط*/
     --font-harmattan:"Harmattan";/*بديل FreeSerif*/
     --font-lora: "Lora"; /*Liberation Serif بديل*/
@@ -77,24 +77,14 @@
       @apply mx-auto ;
     }
 }    
-
 @utility row{ /*اضافة كلاس جديد للتيلوند*/
     @apply flex items-center;
 }
 @utility nav-link{
     @apply text-[16px]  hover:text-head transition-all duration-500  hover:scale-110 hidden lg:inline-block;
 }
-@utility mainbutton{
-    @apply py-4 px-10 rounded-4xl transition-all duration-500 text-white bg-head w-fit hover:text-head hover:bg-white;
-}
-@utility whitebutton{
-    @apply py-4 px-10 rounded-4xl transition-all duration-500 bg-white text-head w-fit hover:bg-head hover:text-white ;
-}
-@utility section{ /*  لانو لما عملت فليكس كول بتنعكس الجستفاي مع الالين اتمز استخدمت  justify-end*/
-    @apply h-72 bg-no-repeat bg-cover bg-center rounded-[40px] flex flex-col justify-end; 
-}
-@utility product{
-    @apply  lg:w-[calc((100%-6rem)/4)] md:w-[calc((100%-4rem)/3)] sm:w-[calc((100%-2rem)/2)] w-full text-center; 
+@utility header{
+    @apply fixed top-0 z-50 py-2.5 text-text font-lora max-xs:px-3 bg-background-main w-full border-b-2 border-border2;
 }
 @utility text-underline{
   position: relative;
@@ -109,18 +99,32 @@
   background-color: #201A1B; 
   }
 }
-@utility before-line{
-    ::before { 
-  content: "______________";
-  background-color: yellow;
-  color: red;
-  font-weight: bold;
+@utility mainbutton{
+    @apply py-4 px-10 rounded-4xl transition-all duration-500 text-white bg-head w-fit hover:text-head hover:bg-white;
+}
+@utility whitebutton{
+    @apply py-4 px-10 rounded-4xl transition-all duration-500 bg-white text-head w-fit hover:bg-head hover:text-white ;
+}
+@utility section{
+    @apply h-72 bg-no-repeat bg-cover bg-center rounded-[40px] flex flex-col justify-end; 
+}
+@utility sug-img{
+    @apply rounded-3xl mb-6.25 w-full ;
+}
+@utility sug-price{
+    @apply text-head font-bold;
+}
+@utility product{
+    @apply  lg:w-[calc((100%-6rem)/4)] md:w-[calc((100%-4rem)/3)] sm:w-[calc((100%-2rem)/2)] w-full text-center; 
 }
 @utility footer-head{
     @apply mb-[25px] text-head; 
 }
 @utility footer-nav{
     @apply  lg:w-[calc((100%-18rem)/4)] max-lg:w-[calc((100%-12rem)/3)]  max-md:w-[calc((100%-12rem)/3)] max-sm:w-full flex flex-col gap-4; 
+}
+@utility footer-ul{
+    @apply  flex flex-col gap-4; 
 }
 @utility new-best {
     @apply absolute top-4 right-4 py-2 px-5 rounded-4xl;
@@ -147,5 +151,14 @@
     @apply flex flex-col;
 }
 @utility form-input{
-    @apply bg-background rounded-4xl py-5 px-6;
+    @apply bg-background rounded-4xl py-5 px-6 my-2 w-full ps-11;
+}
+@utility sign-icon{
+    @apply absolute top-[35%];
+}
+@utility sign-img{
+    @apply absolute  opacity-25 ;
+}
+@utility or-border{
+    @apply flex-1 h-px bg-border2 mt-3;
 }
