@@ -777,6 +777,12 @@
   .bg-\[linear-gradient\(to_top\,rgba\(0\,0\,0\,0\.3\)\,transparent\)\,url\(\.\.\/src\/img\/sections\/candle\.png\)\] {
     background-image: linear-gradient(to top,rgba(0,0,0,0.3),transparent),url(../src/img/sections/candle.png);
   }
+  .bg-\[linear-gradient\(to_top\,rgba\(0\,0\,0\,0\.3\)\,transparent\)\,url\(\.\.\/src\/img\/sections\/note\.png\)\] {
+    background-image: linear-gradient(to top,rgba(0,0,0,0.3),transparent),url(../src/img/sections/note.png);
+  }
+  .bg-\[linear-gradient\(to_top\,rgba\(0\,0\,0\,0\.3\)\,transparent\)\,url\(\.\.\/src\/img\/sections\/notebook\.png\)\] {
+    background-image: linear-gradient(to top,rgba(0,0,0,0.3),transparent),url(../src/img/sections/notebook.png);
+  }
   .bg-\[linear-gradient\(to_top\,rgba\(0\,0\,0\,0\.3\)\,transparent\)\,url\(\.\.\/src\/img\/sections\/stationery\.png\)\] {
     background-image: linear-gradient(to top,rgba(0,0,0,0.3),transparent),url(../src/img/sections/stationery.png);
   }
