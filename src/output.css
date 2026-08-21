@@ -8,7 +8,6 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-700: oklch(55.5% 0.163 48.998);
     --color-taupe-400: oklch(71.4% 0.014 41.2);
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -242,23 +241,14 @@
   .absolute {
     position: absolute;
   }
-  .fixed {
-    position: fixed;
-  }
   .relative {
     position: relative;
   }
   .inset-s-35 {
     inset-inline-start: calc(var(--spacing) * 35);
   }
-  .start-0 {
-    inset-inline-start: calc(var(--spacing) * 0);
-  }
   .inset-e-35 {
     inset-inline-end: calc(var(--spacing) * 35);
-  }
-  .top-0 {
-    top: 0px;
   }
   .top-12 {
     top: calc(var(--spacing) * 12);
@@ -269,35 +259,17 @@
   .top-120 {
     top: calc(var(--spacing) * 120);
   }
-  .right-0 {
-    right: 0px;
-  }
-  .bottom-2 {
-    bottom: calc(var(--spacing) * 2);
-  }
   .bottom-3 {
     bottom: calc(var(--spacing) * 3);
   }
   .bottom-5 {
     bottom: calc(var(--spacing) * 5);
   }
-  .left-1 {
-    left: var(--spacing);
-  }
-  .left-1\.5 {
-    left: calc(var(--spacing) * 1.5);
-  }
   .left-2 {
     left: calc(var(--spacing) * 2);
   }
-  .left-3 {
-    left: calc(var(--spacing) * 3);
-  }
   .z-30 {
     z-index: 30;
-  }
-  .z-50 {
-    z-index: 50;
   }
   .col-span-2 {
     grid-column: span 2 / span 2;
@@ -421,7 +393,7 @@
     color: var(--color-text);
   }
   .footer-head {
-    margin-bottom: 25px;
+    margin-bottom: calc(var(--spacing) * 6.25);
     color: var(--color-head);
   }
   .mb-2 {
@@ -528,23 +500,11 @@
   .inline-block {
     display: inline-block;
   }
-  .table {
-    display: table;
-  }
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
-  .h-1 {
-    height: var(--spacing);
-  }
-  .h-3 {
-    height: calc(var(--spacing) * 3);
-  }
   .h-4 {
     height: calc(var(--spacing) * 4);
-  }
-  .h-5 {
-    height: calc(var(--spacing) * 5);
   }
   .h-fit {
     height: fit-content;
@@ -615,23 +575,11 @@
       width: calc((100% - 6rem) / 4);
     }
   }
-  .w-1 {
-    width: var(--spacing);
-  }
-  .w-2 {
-    width: calc(var(--spacing) * 2);
-  }
   .w-2\/3 {
     width: calc(2 / 3 * 100%);
   }
-  .w-3 {
-    width: calc(var(--spacing) * 3);
-  }
   .w-4 {
     width: calc(var(--spacing) * 4);
-  }
-  .w-5 {
-    width: calc(var(--spacing) * 5);
   }
   .w-\[20\%\] {
     width: 20%;
@@ -656,12 +604,6 @@
   }
   .flex-1 {
     flex: 1;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -717,9 +659,6 @@
   .gap-22 {
     gap: calc(var(--spacing) * 22);
   }
-  .gap-\[8px\] {
-    gap: 8px;
-  }
   .gap-\[63\.99px\] {
     gap: 63.99px;
   }
@@ -756,7 +695,7 @@
     border-style: var(--tw-border-style);
     border-width: 3px;
   }
-  .border-y-1 {
+  .border-y {
     border-block-style: var(--tw-border-style);
     border-block-width: 1px;
   }
@@ -771,10 +710,6 @@
   .border-b {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
-  }
-  .border-b-2 {
-    border-bottom-style: var(--tw-border-style);
-    border-bottom-width: 2px;
   }
   .border-border {
     border-color: var(--color-border);
@@ -795,9 +730,6 @@
     background-color: var(--color-head);
     color: var(--color-white);
   }
-  .bg-\[\#CEB3B3\] {
-    background-color: #CEB3B3;
-  }
   .bg-\[\#FDD3D3\] {
     background-color: #FDD3D3;
   }
@@ -806,9 +738,6 @@
   }
   .bg-\[\#ffffff80\] {
     background-color: #ffffff80;
-  }
-  .bg-amber-700 {
-    background-color: var(--color-amber-700);
   }
   .bg-background {
     background-color: var(--color-background);
@@ -870,12 +799,6 @@
   .p-1 {
     padding: var(--spacing);
   }
-  .p-2 {
-    padding: calc(var(--spacing) * 2);
-  }
-  .p-5 {
-    padding: calc(var(--spacing) * 5);
-  }
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
@@ -909,17 +832,11 @@
   .px-\[24px\] {
     padding-inline: 24px;
   }
-  .py-1 {
-    padding-block: var(--spacing);
-  }
   .py-1\.5 {
     padding-block: calc(var(--spacing) * 1.5);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
-  }
-  .py-2\.5 {
-    padding-block: calc(var(--spacing) * 2.5);
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
@@ -984,9 +901,6 @@
   .text-center {
     text-align: center;
   }
-  .font-lora {
-    font-family: var(--font-lora);
-  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -995,7 +909,7 @@
     font-size: 18px;
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
-    color: #765657;
+    color: var(--color-background-4);
   }
   .product-name {
     font-size: 24px;
@@ -1004,14 +918,8 @@
   .text-\[10px\] {
     font-size: 10px;
   }
-  .text-\[12px\] {
-    font-size: 12px;
-  }
   .text-\[13px\] {
     font-size: 13px;
-  }
-  .text-\[15px\] {
-    font-size: 15px;
   }
   .text-\[16px\] {
     font-size: 16px;
@@ -1083,9 +991,6 @@
   .text-white {
     color: var(--color-white);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .opacity-80 {
     opacity: 80%;
   }
@@ -1101,10 +1006,6 @@
     --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
   @media (hover: hover) {
     .hover\:bg-\[\#ffffff33\]:hover {
       background-color: #ffffff33;
@@ -1116,9 +1017,6 @@
   @media (width < 400px) {
     .max-xs\:hidden {
       display: none;
-    }
-    .max-xs\:px-3 {
-      padding-inline: calc(var(--spacing) * 3);
     }
     .max-xs\:text-\[30px\] {
       font-size: 30px;
@@ -1248,8 +1146,8 @@
     .md\:mx-15 {
       margin-inline: calc(var(--spacing) * 15);
     }
-    .md\:mt-\[31px\] {
-      margin-top: 31px;
+    .md\:mt-7\.25 {
+      margin-top: calc(var(--spacing) * 7.25);
     }
     .md\:max-h-170 {
       max-height: calc(var(--spacing) * 170);
@@ -1464,11 +1362,6 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -1492,7 +1385,6 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
     }
   }
 }
